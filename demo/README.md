@@ -2,23 +2,26 @@
 
 ## Developing
 
-In the parent react-piano directory, run:
+In the parent `react-piano` directory, run:
 
 ```
 yarn install
-yarn link
+```
+
+In a second terminal, start the library watcher if you want live rebuilds while editing `src/`:
+
+```
 yarn start
 ```
 
-In this repo, run:
+Then, in `demo/`, run:
 
 ```
 yarn install
-yarn link react-piano
 yarn start
 ```
 
-The demo site will be running at [localhost:3000](http://localhost:3000). Now you can make changes to react-piano and they'll be reflected on the demo site.
+The demo site will be running at [localhost:3000](http://localhost:3000). The `start` and `build` scripts set `NODE_OPTIONS=--openssl-legacy-provider` so the old `react-scripts` toolchain still works on current Node releases.
 
 ## Deploying
 
